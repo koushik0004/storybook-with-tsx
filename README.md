@@ -37,8 +37,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## StoryBook implementation with typescript
+See the description in [Storybook typescript documentation](https://storybook.js.org/docs/configurations/typescript-config/) <br />
+Also one very usefull blog by [Josh Dando](https://medium.com/@dandobusiness/setting-up-a-react-typescript-storybook-project-5e4e9f540568)
