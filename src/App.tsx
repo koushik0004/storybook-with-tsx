@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Button from './components/Button'
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -18,6 +20,7 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+        <Button>Click To Work</Button>
       </header>
     </div>
   );
