@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 export interface IButtonProps {
   children?: React.ReactNode,
   onClick?: (e:any) => void
@@ -12,7 +12,7 @@ const styles = {
   padding: '3px 10px',
   margin: 10,
 };
-const Button: React.SFC<IButtonProps> = (props) => (
+const Button: React.FunctionComponent<IButtonProps> = (props) => (
   <button onClick={props.onClick} style={styles} type="button">
     {props.children}
   </button>
@@ -22,3 +22,4 @@ Button.defaultProps = {
   onClick: () => {}
 };
 export default Button;
+// button-text-combo-state-only

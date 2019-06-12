@@ -3,8 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 import Button from './components/Button'
+import ButtonTextCombo from './components/hooks-example/button-text-combo-state-only'
+import ButtonTextComboReducer from './components/hooks-example/button-text-combo-reducer'
 
-const App: React.FC = () => {
+const App: React.FunctionComponent = () => {
+  const executeClickHandled = (evt: any) => {
+    console.log(evt.target.textContent);
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +25,9 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
-        <Button>Click To Work</Button>
+        <Button onClick={executeClickHandled}>Click To Work</Button>
+        <ButtonTextCombo />
+        <ButtonTextComboReducer />
       </header>
     </div>
   );
