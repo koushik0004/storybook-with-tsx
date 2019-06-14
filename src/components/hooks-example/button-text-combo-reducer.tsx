@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react'
+import * as React from 'react'
 
 export interface BTState {
   count?: number;
@@ -27,7 +27,7 @@ const reducer = (state: BTState, action: BTAction) => {
 }
 
 const ButtonTextComboReducer: React.FunctionComponent = () => {
-  const [{count, firstName}, dispatch] = useReducer(reducer, {
+  const [{count, firstName}, dispatch] = React.useReducer(reducer, {
     count: 0,
     firstName: ''
   });
@@ -38,9 +38,11 @@ const ButtonTextComboReducer: React.FunctionComponent = () => {
   return (
     <div className="btn-text-warpper">
       <h4>This Section By useReducer Hook</h4>
-      <button className="primary" type="button"
-        onClick={()=>dispatch({type: 'increment'})}>+</button>
-      <div className="text-body">Count: {count}</div>
+      <div className="make-inline">
+        <button className="btn btn-secondary" type="button"
+          onClick={()=>dispatch({type: 'increment'})}>+</button>
+        <div className="text-body">Count: {count}</div>
+      </div>
       <input type="text" value={firstName} onChange={updateStateData} />
     </div>
   );

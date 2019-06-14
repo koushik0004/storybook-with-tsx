@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 export interface IButtonProps {
   children?: React.ReactNode,
   onClick?: (e:any) => void
@@ -22,4 +22,3 @@ Button.defaultProps = {
   onClick: () => {}
 };
 export default Button;
-// button-text-combo-state-only

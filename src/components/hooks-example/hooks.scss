@@ -1,0 +1,29 @@
+.btn {
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  &.btn-primary{
+    background-color: green;
+    color: whitesmoke;
+  }
+  &.btn-secondary{
+    background-color: #4071ED;
+    color: whitesmoke;
+  }
+}
+
+.make-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #969696;
+}
