@@ -40,3 +40,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## StoryBook implementation with typescript
 See the description in [Storybook typescript documentation](https://storybook.js.org/docs/configurations/typescript-config/) <br />
 Also one very usefull blog by [Josh Dando](https://medium.com/@dandobusiness/setting-up-a-react-typescript-storybook-project-5e4e9f540568)
+Also for the next level accessibility [Josh Dando](https://medium.com/@dandobusiness/improving-your-storybook-with-storybook-addons-717677e89de7)

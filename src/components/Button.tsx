@@ -1,6 +1,7 @@
 import * as React from 'react';
 export interface IButtonProps {
   children?: React.ReactNode,
+  styles?: object;
   onClick?: (e:any) => void
 }
 const styles = {
@@ -13,7 +14,7 @@ const styles = {
   margin: 10,
 };
 const Button: React.FunctionComponent<IButtonProps> = (props) => (
-  <button onClick={props.onClick} style={styles} type="button">
+  <button onClick={props.onClick} style={props.styles || styles} type="button">
     {props.children}
   </button>
 );
